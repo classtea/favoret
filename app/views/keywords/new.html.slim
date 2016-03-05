@@ -1,2 +1,19 @@
-h1 Keywords#new
-p Find me in app/views/keywords/new.html.slim
+.container
+  br
+  br
+  .row
+    form.col.s12
+      .row
+        .input-field.col.s12
+           <input placeholder="キーワードを入力してください" id="first_name" type="text" class="validate">
+           <label for="first_name">キーワード</label>
+      .row
+        .input-field.col.s6
+          <input type="checkbox" class="filled-in" id="favo" />
+          <label for="favo">ふぁぼ</label>
+        .input-field.col.s6
+          <input type="checkbox" class="filled-in" id="retweet" />
+          <label for="retweet">リツイート</label>
+      .row
+        .input-field.col.s12
+          <input type="submit" class="btn" value="送信" />
