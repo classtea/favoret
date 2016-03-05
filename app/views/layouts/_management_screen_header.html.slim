@@ -7,7 +7,12 @@ nav
       = link_to 'ふぁぼ＆リツイート', new_keyword_path, class: ''
     li
       = link_to '一覧', keywords_path, class: ''
-      
+    li
+      - if user_signed_in?
+        = link_to 'サインアウト', destroy_user_session_path, method: :delete
+      - else
+        = link_to 'サインイン', user_omniauth_authorize_path(:twitter)
+
   .container
     ul.right.hide-on-med-and-down
       li ふぁぼ＆リツイート
