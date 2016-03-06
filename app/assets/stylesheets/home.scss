@@ -1,3 +1,18 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "materialize/components/color";
+
+.promo {
+
+  i {
+    font-size: 6rem;
+    color: color("pink", "lighten-2")
+  }
+
+  .promo-caption {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+}

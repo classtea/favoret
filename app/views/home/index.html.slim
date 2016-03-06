@@ -1,0 +1,39 @@
+.section.center-align
+  h1 ほげほげ！w
+  .row
+    p.s12 ほげほげ！wほげほげ！wほげほげ！wほげほげ！wほげほげ！wほげほげ！w
+  .row
+    = link_to 'サインイン', user_omniauth_authorize_path(:twitter), class: 'btn-large'
+
+.section.center-align.grey.lighten-5
+  .container
+    .row
+      .col.m4
+        .center.promo
+          i.material-icons reply
+          h2.promo-caption ふぁぼ・リツイートを自動化
+          p.light.center
+            |
+              特定のキーワードでタイムライン上のツイートを自動でふぁぼ・リツイートできます。
+
+      .col.m4
+        .center.promo
+          i.material-icons done
+          h2.promo-caption シンプルですぐに利用できる
+          p.light.center
+            |
+              登録に必要なのはTwitterによる認証だけなので、今すぐ利用を開始できます。
+
+      .col.m4
+        .center.promo
+          i.material-icons message
+          h2.promo-caption 使いやすい管理画面
+          p.light.center
+            |
+              すっきりと見やすいマテリアルデザインの管理画面です。
+
+.section.center-align
+  .row
+    h5.col.s12 登録に必要なのはツイッターのアカウントのみ、今すぐ使ってみる
+  .row
+    = link_to 'サインイン', user_omniauth_authorize_path(:twitter), class: 'btn-large'

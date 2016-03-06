@@ -1,0 +1,15 @@
+header
+nav.pink.lighten-3
+  .container
+    = link_to 'ふぁぼりっと', root_url, class: 'brand-logo'
+    
+    ul.right.hide-on-med-and-down
+      li
+        = link_to '管理画面', new_keyword_path, class: ''
+      li 
+        - if user_signed_in?
+          = link_to 'サインアウト', destroy_user_session_path, method: :delete
+        - else
+          = link_to 'サインイン', user_omniauth_authorize_path(:twitter)
+          
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
